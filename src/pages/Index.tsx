@@ -1,12 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import HeroSection from '@/components/HeroSection';
+import FeaturedProducts from '@/components/FeaturedProducts';
+import Collections from '@/components/Collections';
+import Features from '@/components/Features';
+import Newsletter from '@/components/Newsletter';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div>
+      <HeroSection />
+      
+      <FeaturedProducts 
+        title="New Arrivals" 
+        subtext="Discover our latest styles and seasonal must-haves for your fashionable pet."
+        limit={4}
+        viewAllLink="/collections/new-arrivals"
+      />
+      
+      <Collections />
+      
+      <FeaturedProducts 
+        title="Best Sellers" 
+        subtext="Our customers' favorites and most loved pet fashion items."
+        limit={4}
+        viewAllLink="/collections/best-sellers"
+      />
+      
+      <Features />
+      
+      <Newsletter />
     </div>
   );
 };
