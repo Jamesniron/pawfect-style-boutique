@@ -12,7 +12,7 @@ const Features = () => {
     {
       icon: <Heart className="w-8 h-8 text-brand-navy" />,
       title: 'Designed with Love',
-      description: 'Each item is thoughtfully designed with your pet's comfort and style in mind.'
+      description: 'Each item is thoughtfully designed with your pet\'s comfort and style in mind.'
     },
     {
       icon: <Truck className="w-8 h-8 text-brand-navy" />,
@@ -22,7 +22,7 @@ const Features = () => {
     {
       icon: <RefreshCcw className="w-8 h-8 text-brand-navy" />,
       title: 'Easy Returns',
-      description: '30-day hassle-free returns if the item doesn't fit or meet your expectations.'
+      description: '30-day hassle-free returns if the item doesn\'t fit or meet your expectations.'
     },
   ];
 
